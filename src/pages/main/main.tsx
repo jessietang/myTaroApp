@@ -1,8 +1,10 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
-import './index.scss'
+import './main.scss'
 
-export default class Index extends Component {
+// Taro create --name [页面名称] 能够在当前项目的pages目录下快速生成新的页面文件，并填充基础代码，是一个提高开发效率的利器。
+
+export default class Main extends Component {
 
   componentWillMount () { }
 
@@ -27,10 +29,8 @@ export default class Index extends Component {
 
   render () {
     return (
-      <View className='index'>
-        <Text className="title1">我要居中</Text>
-
-        <Text className="title1">我要居中2</Text>
+      <View className='main'>
+        <Text>Hello world!</Text>
       </View>
     )
   }
